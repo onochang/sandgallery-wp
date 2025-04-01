@@ -1,0 +1,295 @@
+/* ===== 共通のCSS ===== */
+body{
+    margin-top: 80px;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+
+.section-container {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.section-head {
+    color: #444;
+    font-size: 40px;
+    line-height: 1;
+}
+
+
+/* ヘッダー */
+.header{
+    height: 80px;
+}
+
+.header-container{
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.header-nav{
+    display: none;
+}
+
+.header-logo{
+    width: 160px;
+}
+
+.mobile-menu{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 6px;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: #FFF;
+}
+
+.mobile-menu-border{
+    width: 24px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #2D2D2D;
+}
+
+/* ハンバーガーメニューがクリックされた時 */
+/* クローズマークの表現 */
+.mobile-menu.active .mobile-menu-border:nth-child(1) {
+    transform: translateY(4px) rotate(45deg);
+}
+
+.mobile-menu.active .mobile-menu-border:nth-child(2) {
+    transform: translateY(-4px) rotate(-45deg);
+}
+
+/* モバイルナビゲーション */
+.mobile-nav{
+    position: fixed;
+    width: 100%;
+    height: calc(100vh - 80px);
+    padding: 32px 20px;
+    background-color: #2D2D2D;
+    color: #FFF;
+    z-index: 1;
+}
+
+.mobile-nav.open{
+    display: block;
+}
+
+.mobile-nav ul{
+    display: flex;
+    flex-flow: column;
+    row-gap: 32px;
+}
+
+.mobile-nav li{
+    line-height: 1;
+}
+
+
+/* ヒーローエリア */
+.hero{
+    height: initial;
+    aspect-ratio: 4/3;
+}
+
+.site-title {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.site-title h1 {
+    margin-bottom: 8px;
+    font-size: 32px;
+}
+
+.site-title p {
+    font-size: 14px;
+}
+
+
+/* コンセプトセクション */
+.concept {
+    padding: 80px 0;
+}
+
+.concept-content {
+    row-gap: 20px;
+}
+
+.concept-text .section-head {
+    margin-bottom: 15px;
+}
+
+.concept-text p {
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+
+/* ニュースセクション */
+.news {
+    padding: 80px 0;
+}
+
+.news .section-head {
+    margin-bottom: 40px;
+}
+
+.news-posts {
+    row-gap: 30px;
+}
+
+.news-thumbnail {
+    margin-bottom: 8px;
+}
+
+.news-date {
+    margin-bottom: 4px;
+    font-size: 12px;
+}
+
+.news-title {
+    font-size: 16px;
+}
+
+
+/* アーティストセクション */
+.artist {
+    padding: 80px 0;
+}
+
+.artist .section-head {
+    margin-bottom: 20px;
+}
+
+.artist-content {
+    row-gap: 40px;
+}
+
+.artist-text p {
+    margin-bottom: 40px;
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+
+/* インフォメーションセクション */
+.info {
+    padding-top: 80px;
+}
+
+.info .section-head {
+    margin-bottom: 48px;
+    font-size: 32px;
+}
+
+.info-content {
+    flex-flow: column;
+    row-gap: 24px;
+}
+
+.info-details {
+    width: 100%;
+}
+
+.info-head {
+    padding-left: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.info-head::before {
+    width: 16px;
+}
+
+.hours {
+    margin-bottom: 32px;
+}
+
+.hours p {
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+.fee{
+    padding-right: 16px;
+}
+
+.fee .info-head{
+    margin-bottom: 16px;
+}
+
+.fee-menu p{
+    font-size: 15px;
+    line-height: 1;
+}
+
+.info-image {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+
+/* アクセスセクション */
+.access {
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+
+.access .section-head {
+    margin-bottom: 16px;
+    font-size: 32px;
+}
+
+.access-text {
+    margin-left: initial;
+    margin-bottom: 24px;
+}
+
+.access-map {
+    padding: initial;
+}
+
+.access-map iframe {
+    width: 100%;
+    aspect-ratio: 4/3;
+    filter: grayscale(0%);
+}
+
+
+/* フッター */
+.footer {
+    padding: 48px 20px 28px;
+}
+
+.footer-container {
+    width: 100%;
+    padding-bottom: 32px;
+    margin-bottom: 28px;
+}
+
+.footer-logo img {
+    width: 160px;
+}
+
+.social-links {
+    column-gap: 12px;
+}
+
+.social-links i {
+    font-size: 24px;
+}
+
+.copyright {
+    font-size: 14px;
+    line-height: 1;
+}
+

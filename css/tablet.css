@@ -1,0 +1,121 @@
+/* ===== 共通のCSS ===== */
+.section-head {
+    font-size: 64px;
+}
+
+
+/* ヒーローエリア */
+.site-title h1 {
+    margin-bottom: 16px;
+    font-size: 56px;
+}
+
+.site-title p {
+    font-size: 20px;
+}
+
+
+/* コンセプトセクション */
+.concept {
+    padding: 96px 0;
+}
+
+.concept-content {
+    flex-flow: column;
+    row-gap: 48px;
+}
+
+.concept-text {
+    width: 100%;
+}
+
+.concept-text .section-head {
+    margin-bottom: 24px;
+}
+
+.concept-image {
+    width: 100%;
+}
+
+
+/* ニュースセクション */
+.news {
+    padding: 96px 0;
+}
+
+.news .section-head {
+    margin-bottom: 64px;
+}
+
+.news-posts {
+    flex-flow: column;
+    row-gap: 48px;
+}
+
+.news-thumbnail {
+    margin-bottom: 16px;
+    filter: grayscale(0%);
+}
+
+.news-date {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.news-title {
+    font-size: 20px;
+}
+
+
+/* アーティストセクション */
+.artist {
+    padding: 96px 0;
+}
+
+.artist .section-head {
+    margin-bottom: 24px;
+}
+
+.artist-content {
+    flex-flow: column;
+    row-gap: 48px;
+}
+
+.artist-image {
+    width: 100%;
+}
+
+.artist-text {
+    width: 100%;
+}
+
+.artist-text p {
+    margin-bottom: 64px;
+}
+
+
+/* インフォメーションセクション */
+.info {
+    padding-top: 96px;
+}
+
+.info-content {
+    column-gap: 32px;
+}
+
+.info-details {
+    width: 50%;
+}
+
+.info-image {
+    width: calc(50% - 32px);
+    aspect-ratio: 3/4;
+    object-fit: cover;
+}
+
+
+/* アクセスセクション */
+.access {
+    padding-top: 64px;
+    padding-bottom: 144px;
+}

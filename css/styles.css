@@ -163,6 +163,8 @@ section {
     margin-bottom: 12px;
     filter: grayscale(100%);
     transition: .3s;
+    aspect-ratio: 3/2;
+    object-fit: cover;
 }
 
 .news-thumbnail:hover {

@@ -12,10 +12,10 @@
     <!-- ヘッダー -->
     <header class="header">
         <div class="header-container">
-            <a href="#" class="header-logo"><img src="<?php echo get_template_directory_uri(); ?>/images/logo_white.svg" alt="Sand Galleryのロゴ"></a>
+            <a href="<?php echo home_url('/'); ?>" class="header-logo"><img src="<?php echo get_template_directory_uri(); ?>/images/logo_white.svg" alt="Sand Galleryのロゴ"></a>
             <nav class="header-nav">
                 <ul>    
-                    <li><a href="#">Top</a></li>
+                    <li><a href="<?php echo home_url('/'); ?>">Top</a></li>
                     <li><a href="#concept">Concept</a></li>
                     <li><a href="#news">News</a></li>
                     <li><a href="#artist">Artist</a></li>

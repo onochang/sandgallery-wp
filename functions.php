@@ -75,3 +75,13 @@ function sand_gallery_enqueue_styles_scripts() {
     );
 }
 add_action('wp_enqueue_scripts', 'sand_gallery_enqueue_styles_scripts');
+
+// ツールバーを非表示にするコード
+add_filter('show_admin_bar', '__return_false');
+
+// テーマの初期設定
+function sand_gallery_setup() {
+    // アイキャッチ画像を有効化
+    add_theme_support('post-thumbnails');
+}
+add_action('after_setup_theme', 'sand_gallery_setup');

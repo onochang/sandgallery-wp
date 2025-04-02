@@ -83,5 +83,7 @@ add_filter('show_admin_bar', '__return_false');
 function sand_gallery_setup() {
     // アイキャッチ画像を有効化
     add_theme_support('post-thumbnails');
+    // デフォルトのサイズを設定
+    set_post_thumbnail_size(800, 400, true);
 }
 add_action('after_setup_theme', 'sand_gallery_setup');

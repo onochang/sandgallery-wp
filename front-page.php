@@ -28,16 +28,16 @@
             <div class="section-container">
                 <h2 class="section-head">News</h2>
                 <div class="news-posts">
-                <?php if (have_posts()): ?>
-                    <?php while (have_posts()): the_post(); ?>
+                <?php if(have_posts()): ?>
+                    <?php while(have_posts()): the_post(); ?>
                     <article class="news-post slide-bottom">
                         <a href="<?php the_permalink(); ?>">
-                            <img class="news-thumbnail" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="投稿のサムネイル">
+                            <img class="news-thumbnail" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title_attribute(); ?>">
                             <p class="news-date"><?php echo get_the_date('Y.m.d'); ?></p>
                             <h3 class="news-title"><?php the_title(); ?></h3>
                         </a>
                     </article>
-                    <?php endwhile; ?>
+                    <?php endwhile;?>
                 <?php else: ?>
                     <p>投稿がありません。</p>
                 <?php endif; ?>

@@ -87,3 +87,32 @@ function sand_gallery_setup() {
     set_post_thumbnail_size(800, 400, true);
 }
 add_action('after_setup_theme', 'sand_gallery_setup');
+
+// カスタム投稿
+function create_custom_post_type() {
+    register_post_type('works',
+        array(
+            'labels' => array(
+                'name'          => '作品',
+                'singular_name' => '作品',
+                'add_new'       => '新規追加',
+                'add_new_item'  => '新しい作品を追加',
+                'edit_item'     => '作品を編集',
+                'new_item'      => '新しい作品',
+                'view_item'     => '作品を表示',
+                'search_items'  => '作品を検索',
+                'not_found'     => '作品が見つかりません',
+                'not_found_in_trash' => 'ゴミ箱に作品はありません',
+            ),
+            'public'       => true,
+            'has_archive'  => true,
+            'menu_position' => 5,
+            'menu_icon'    => 'dashicons-portfolio',
+            'supports'     => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'),
+            'rewrite'      => array('slug' => 'works'),
+            'show_in_rest' => true,
+        )
+    );
+}
+add_action('init', 'create_custom_post_type');
+

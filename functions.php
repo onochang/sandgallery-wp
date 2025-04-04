@@ -116,3 +116,12 @@ function create_custom_post_type() {
 }
 add_action('init', 'create_custom_post_type');
 
+// メニュー登録
+function my_custom_menus() {
+    register_nav_menus(array(
+        'header-menu'  => 'ヘッダーメニュー',
+        'mobile-menu'  => 'モバイルメニュー',
+        'footer-menu'  => 'フッターメニュー',
+    ));
+}
+add_action('after_setup_theme', 'my_custom_menus');

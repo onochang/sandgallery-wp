@@ -14,14 +14,13 @@
         <div class="header-container">
             <a href="<?php echo home_url('/'); ?>" class="header-logo"><img src="<?php echo get_template_directory_uri(); ?>/images/logo_white.svg" alt="Sand Galleryのロゴ"></a>
             <nav class="header-nav">
-                <ul>    
-                    <li><a href="<?php echo home_url('/'); ?>">Top</a></li>
-                    <li><a href="#concept">Concept</a></li>
-                    <li><a href="#news">News</a></li>
-                    <li><a href="#artist">Artist</a></li>
-                    <li><a href="#info">Information</a></li>
-                    <li><a href="#access">Access</a></li>
-                </ul>
+            <?php
+            wp_nav_menu(array(
+                'theme_location' => 'header-menu', // ヘッダーメニューを表示
+                'container'      => false, // <nav> で囲まない
+                'menu_class'     => false, // <ul> のクラス
+            ));
+            ?>
             </nav>
             <!-- スマホ閲覧時のみ表示 -->
             <div class="mobile-menu" id="mobile-menu">
@@ -34,12 +33,11 @@
 
     <!-- モバイルナビゲーション -->
     <nav class="mobile-nav" id="mobile-nav">
-        <ul>
-            <li><a href="#">Top</a></li>
-            <li><a href="#concept">Concept</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#artist">Artist</a></li>
-            <li><a href="#info">Information</a></li>
-            <li><a href="#access">Access</a></li>
-        </ul>
+    <?php
+    wp_nav_menu(array(
+        'theme_location' => 'mobile-menu', // モバイル用メニュー
+        'container'      => false,
+        'menu_class'     => false,
+    ));
+    ?>
     </nav> 
